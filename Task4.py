@@ -29,15 +29,7 @@ not_telemarketer = has_sent_texts.union(has_received_texts, has_received_calls)
 telemarketers = has_made_calls.difference(not_telemarketer)
 telemarketers_sorted = sorted(telemarketers)
 print("These numbers could be telemarketers: ")
-for telemarketer in telemarketers_sorted:
-    print(telemarketer)
-
-"""
-Time Complexity:
-The sorted function call is of O(nlogn) complexity. The time complexities of the set method call to union() is just 
-O(len(s)+len(t)). The time complexity of the difference() call is O(len(s)) for the difference between s and t.
-Thus, the largest factor is the O(nlogn) sorted call, so the time complexity is O(nlogn).
-"""
+print(*telemarketers_sorted, sep='\n')
 
 """
 TASK 4:

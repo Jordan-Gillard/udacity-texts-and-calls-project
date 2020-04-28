@@ -23,11 +23,6 @@ with open('calls.csv', 'r') as f:
 print(f"There are {len(unique_numbers)} different telephone numbers in the records.")
 
 """
-Time Complexity:
-Because we have to iterate over all rows in the calls.csv and texts.csv files, the time complexity is O(n).
-"""
-
-"""
 TASK 1:
 How many different telephone numbers are there in the records? 
 Print a message:

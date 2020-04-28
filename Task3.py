@@ -49,13 +49,6 @@ with open('calls.csv', 'r') as f:
     print(f"{percent_of_calls_among_bangalore} percent of calls from fixed lines in Bangalore are calls to other "
           f"fixed lines in Bangalore.")
 
-
-"""
-Time Complexity:
-First, we iterate over all rows in the csv file. The call to .sort() is of O(nlogn) complexity. So the time complexity
-is O(nlogn + n), which can be shortened to O(nlogn).
-"""
-
 """
 TASK 3:
 (080) is the area code for fixed line telephones in Bangalore.

@@ -1,0 +1,23 @@
+Task 0:
+Time complexity:
+Because list(reader) has to iterate over all lines in the file, the time complexity of this algorithm is O(n).
+If we were only opening the file and reading either the first or last line, it would be O(1).
+
+Task 1:
+Time Complexity:
+Because we have to iterate over all rows in the calls.csv and texts.csv files, the time complexity is O(n).
+
+Task 2:
+Time Complexity:
+Because we have to iterate over all rows in the calls.csv file, the time complexity is O(n).
+
+Task 3:
+Time Complexity:
+First, we iterate over all rows in the csv file. The call to .sort() is of O(nlogn) complexity. So the time complexity
+is O(nlogn + n), which can be shortened to O(nlogn).
+
+Task 4:
+Time Complexity:
+The sorted function call is of O(nlogn) complexity. The time complexities of the set method call to union() is just
+O(len(s)+len(t)). The time complexity of the difference() call is O(len(s)) for the difference between s and t.
+Thus, the largest factor is the O(nlogn) sorted call, so the time complexity is O(nlogn).
