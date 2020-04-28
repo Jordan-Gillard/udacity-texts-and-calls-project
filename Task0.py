@@ -18,12 +18,6 @@ with open('calls.csv', 'r') as f:
           f"lasting {last_calls[3]} seconds")
 
 """
-Time complexity:
-Because list(reader) has to iterate over all lines in the file, the time complexity of this algorithm is O(n).
-If we were only opening the file and reading either the first or last line, it would be O(1).
-"""
-
-"""
 TASK 0:
 What is the first record of texts and what is the last record of calls?
 Print messages:
